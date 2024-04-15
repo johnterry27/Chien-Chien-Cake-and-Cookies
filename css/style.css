@@ -9,6 +9,9 @@
   outline: none;
   border: none;
   text-decoration: none;
+  ::-webkit-scrollbar {
+    display: none;
+}
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -55,10 +58,10 @@ body {
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.1rem;
   border-bottom: 0.1rem solid #fff;
   transform: scaleX(0);
-  transition: 0.2s linear;
+  transition: 0.5s ease-out;
 }
 
 .navbar .navbar-nav a:hover::after {
@@ -112,14 +115,17 @@ body {
   background-color: #ee8197;
   border-radius: 0.5rem;
 }
+.hero .content .cta:hover {
+  background-color: #483d3f;
+  transition: 0.3s ease;
+}
 
 /* about section */
 .about,
 .menu,
 .contact {
-  padding: 8rem 7% 1.4rem;
+  padding: 7rem 7% 1rem;
 }
-
 .about h2,
 .menu h2,
 .contact h2 {
@@ -177,18 +183,18 @@ body {
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 3rem;
   justify-content: center;
 }
 
 .menu .row .menu-card {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 70%;
 }
 
 .menu .row .menu-card .menu-card-title {
@@ -329,3 +335,4 @@ body {
     font-size: 55%;
   }
 }
+
