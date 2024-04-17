@@ -255,7 +255,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: var(--primary);
+  background-color: #ee8197;
   text-align: center;
   padding: 1rem 0;
   margin-top: 3rem;
@@ -266,14 +266,14 @@ footer .social {
 }
 
 footer .social a {
-  color: #fff;
+  color: var(--primary);
   margin: 1rem;
   padding-bottom: 3rem;
 }
 
 footer .social a:hover,
 footer .links a:hover {
-  color: #ee8197;
+  color: #fff;
 }
 
 footer .links {
@@ -281,16 +281,17 @@ footer .links {
 }
 
 footer .links a {
-  color: #fff;
+  color: var(--primary);
   padding: 0.7rem 1rem;
 }
 
 footer .created {
   font-size: 0.8rem;
+  color: var(--primary);
 }
 
 footer .created a {
-  color: #ee8197;
+  color: #fff;
   font-weight: 700;
 }
 
